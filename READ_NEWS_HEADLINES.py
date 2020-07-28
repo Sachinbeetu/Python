@@ -8,8 +8,8 @@ def speak(str):
 
 if __name__ == '__main__':
     speak("News for today.. Lets begin")
-    url = ('https://newsapi.org/v2/top-headlines?country=in&apiKey=163b3071f144450eb6e67ff3c848bdc1')
-    # url = "https://newsapi.org/v2/top-headlines?sources=the-times-of-india&apiKey=163b3071f144450eb6e67ff3c848bdc1"
+    url = ('https://newsapi.org/v2/top-headlines?country=in&apiKey=YOUR API')
+    # url = "https://newsapi.org/v2/top-headlines?sources=the-times-of-india&apiKey=YOUR API"
     news = requests.get(url).text
     news_dict = json.loads(news)
     c=str(news_dict['totalResults'])
