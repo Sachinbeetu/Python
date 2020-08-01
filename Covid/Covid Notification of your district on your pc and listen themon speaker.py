@@ -14,7 +14,7 @@ data = requests.get(url).text
 def notify(title, message):
     notification.notify(title=title, app_icon='D:\Projects\Python Projects\PycharmProjects\covid\icon.ico',
                         message=message, timeout=7)
-speak('Made by Sachin')
+speak('Made by Sachin Chauhan')
 if __name__ == '__main__':
     dict = json.loads(data)
     s = input('Enter State name for data access(Case sensitive):')
