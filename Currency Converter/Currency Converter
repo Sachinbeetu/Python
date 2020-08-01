@@ -1,0 +1,11 @@
+with open('rates.txt') as f:
+    lines = f.readlines()
+Dict = {}
+for line in lines:
+    parsed = line.rstrip().split('\t')
+    Dict[parsed[0]] = parsed[1]
+amount = int(input('Enter Amount :'))
+print('Enter Currency \n')
+[print(item) for item in Dict.keys()]
+currency = input('Enter on of these : \n')
+print(f'{amount} INR equal to :  {amount*float(Dict[currency])}{currency}')
